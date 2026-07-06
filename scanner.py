@@ -13,5 +13,5 @@ def scan_port(target, port):
 
         return result == 0
 
-    except:
+    except OSError:
         return False
