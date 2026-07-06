@@ -7,5 +7,5 @@ def dns_lookup(target):
 
         return hostname[0]
 
-    except:
+    except OSError:
         return "Unknown"

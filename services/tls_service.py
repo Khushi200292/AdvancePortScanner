@@ -18,5 +18,5 @@ def get_tls_info(host, port=443):
 
                 return cert
 
-    except:
+    except OSError:
         return None

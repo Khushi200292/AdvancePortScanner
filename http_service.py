@@ -22,5 +22,5 @@ def analyze_http(ip, port):
 
         return findings
 
-    except:
+    except OSError:
         return []

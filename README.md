@@ -164,3 +164,9 @@ This project is intended for educational purposes and authorized security testin
 Cybersecurity Enthusiast | Python Developer | Network Security Learner
 
 GitHub: https://github.com/Khushi200292
+
+## Usage
+
+```bash
+python3 main.py
+```

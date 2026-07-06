@@ -49,7 +49,7 @@ def get_service_banner(ip, port):
 
         return banner.split("\n")[0][:50]
 
-    except:
+    except OSError:
         return "No Banner"
 
 
@@ -66,7 +66,7 @@ def worker(port):
 
     try:
         service = socket.getservbyport(port)
-    except:
+    except OSError:
         service = "Unknown"
 
     with lock:
